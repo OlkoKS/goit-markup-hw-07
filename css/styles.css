@@ -190,6 +190,7 @@ img {
   padding: 24px 24px 40px 40px;
   display: flex;
   flex-direction: column;
+  transform: translate(0) scale(1);
   transition: transform var(--transition-duration-timing-function);
 }
 
