@@ -191,11 +191,9 @@ img {
   display: flex;
   flex-direction: column;
   transform: translate(0) scale(1);
-  transition: transform var(--transition-duration-timing-function);
-}
-
-.mob-menu.is-hidden {
-  transform: translate(90%, -90%) scale(0);
+  transition: transform var(--transition-duration-timing-function),
+    opacity var(--transition-duration-timing-function),
+    visibility var(--transition-duration-timing-function);
 }
 
 .mob-menu-close-btn {
@@ -229,6 +227,10 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.mob-menu.is-hidden {
+  transform: translate(90%, -90%) scale(0);
 }
 
 .mob-menu-list {
@@ -628,7 +630,6 @@ img {
 }
 
 .modal {
-  width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -638,7 +639,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-duration-timing-function);
 }
